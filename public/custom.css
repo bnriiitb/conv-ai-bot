@@ -1,5 +1,9 @@
-.MuiStack-root.watermark {
-    display: none;
+.MuiStack-root.watermark::after {
+    content: "LLMs can make mistakes. Consider checking important information.";
+    font-size: x-small;
+    color: rgb(159, 159, 159);
+    visibility: visible !important;
+    /* Other CSS styles for the pseudo-element */
 }
 a[href*='https://github.com/Chainlit/chainlit'] {
     visibility: hidden;
